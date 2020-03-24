@@ -32,4 +32,6 @@ EXPOSE 3838
 
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 
+COPY shiny-customized.config /etc/shiny-server/shiny-server.conf
+
 CMD ["/usr/bin/shiny-server.sh"]
